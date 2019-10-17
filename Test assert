@@ -10,14 +10,14 @@
     });
 
     // Name = "Carbon credits"
-   pm.test("Name = 'Carbon credits'", function () {
-     pm.expect(pm.response.text('Name'))
-     .to.include("Carbon credits");
+    pm.test("Name = 'Carbon credits'", function () {
+    pm.expect(pm.response.text('Name'))
+    .to.include("Carbon credits");
     });
 
    // CanRelist = true // text test
-     pm.test("CanRelist = true // text test", function () {
-     pm.expect(pm.response.text('CanRelist'))
+    pm.test("CanRelist = true // text test", function () {
+    pm.expect(pm.response.text('CanRelist'))
     .to.include("true");
     });
 
@@ -25,7 +25,6 @@
     pm.test("CanRelist = true //boolean test", function () {
     var jsonData = pm.response.json();   
     pm.expect(jsonData.CanRelist).to.be.true;
-
     });
 
 
@@ -41,6 +40,5 @@
     pm.expect(body.Promotions[i].Description).to.include ('2x larger image'); 
         }
         }
-
     });
     
