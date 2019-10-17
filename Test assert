@@ -1,4 +1,11 @@
 
+//Acceptance Criteria:
+//Name = "Carbon credits"
+//CanRelist = true
+//The Promotions element with Name = "Gallery" has a Description that contains the text "2x larger image"
+    
+    
+    
     //Successful GET request
     pm.test("Successful GET request", function () {
     pm.expect(pm.response.code).to.be.oneOf([200,201,202]);
